@@ -1,0 +1,99 @@
+/* 전체 컨테이너 스타일 */
+.TemporaryCare-temporary-care {
+  background-color: #e8eae8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 헤더 스타일 */
+.TemporaryCare-header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 헤더 내용 스타일 */
+.TemporaryCare-header-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 뒤로 가기 버튼 스타일 */
+.TemporaryCare-back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  align-self: flex-start;
+}
+
+/* 제목과 설명 컨테이너 스타일 */
+.TemporaryCare-title-description {
+  margin-top: 16px;
+}
+
+/* 제목 스타일 */
+.TemporaryCare-title-description h1 {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+}
+
+/* 설명 텍스트 스타일 */
+.TemporaryCare-description {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 메인 컨텐츠 영역 스타일 */
+.TemporaryCare-main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* 매칭 버튼 스타일 */
+.TemporaryCare-matching-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* 강아지 카드 그리드 스타일 */
+.dogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px; /* Increased from 16px to 24px for more spacing */
+}
+
+/* 스크롤바 스타일링 */
+.TemporaryCare-main-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.TemporaryCare-main-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.TemporaryCare-main-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.TemporaryCare-main-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+

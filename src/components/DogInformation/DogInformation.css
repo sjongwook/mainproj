@@ -1,0 +1,192 @@
+.doginformation-container {
+  min-height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.doginformation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  background-color: white;
+}
+
+.doginformation-back-button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.doginformation-back-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.doginformation-image-container {
+  margin-top: 10px;
+}
+
+.doginformation-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.doginformation-text {
+  color: #666;
+  font-size: 16px;
+}
+
+.doginformation-content {
+  flex: 1;
+  background-color: #E8EAE8;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.doginformation-form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.doginformation-form-group {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.doginformation-label {
+  width: 80px;
+  flex-shrink: 0;
+  color: #333;
+}
+
+.doginformation-form-input {
+  flex-grow: 1;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #075915;
+  background-color: transparent;
+  font-size: 14px;
+  outline: none;
+}
+
+.doginformation-form-input:focus {
+  border-bottom-width: 2px;
+}
+
+.doginformation-textarea {
+  min-height: 80px;
+  resize: vertical;
+  border: 1px solid #075915;
+  border-radius: 4px;
+}
+
+.doginformation-radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.doginformation-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.doginformation-date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.doginformation-date-input {
+  width: calc(33.33% - 10px);
+  text-align: center;
+}
+
+.doginformation-date-input.invalid-date {
+  border-bottom-color: red;
+}
+
+.doginformation-date-separator {
+  color: #666;
+}
+
+.doginformation-mbti-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.doginformation-mbti-input {
+  flex-grow: 0;
+  width: 60px;
+  text-align: center;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.doginformation-mbti-input:disabled {
+  color: #666;
+}
+
+.doginformation-mbti-button-link {
+  text-decoration: none;
+}
+
+.doginformation-mbti-button {
+  padding: 6px 12px;
+  background-color: #075915;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.doginformation-mbti-button:hover {
+  background-color: #064512;
+}
+
+.doginformation-submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b5b40;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.doginformation-submit-button:hover {
+  background-color: #224732;
+}
+
+.doginformation-radio-label input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #075915;
+}
+

@@ -1,0 +1,101 @@
+user_id,password,name,email,phone_number,address,nickname
+1,%04+dJd3oD,서준서,junhyeoggim@jusighoesa.com,063-585-7513,서울특별시 중랑구 도산대길,종수
+2,Nc$2Lk7df6,안지우,bagjeonghyi@nate.com,062-111-6901,제주특별자치도 제천시 삼성가,하은
+3,&wENl6Dhy0,김지우,jieungim@dreamwiz.com,042-840-2950,대전광역시 도봉구 논현가,지은
+4,T!4IvTPi(_,이종수,jiuseo@daum.net,02-3619-6009,충청남도 양구군 반포대3로,영호
+5,_7YnlkS^Pk,이유진,jeongho56@gmail.com,033-486-5786,인천광역시 서구 오금가 (옥자나읍),명숙
+6,1+)0GpEl+q,김서윤,jeonghyiyang@yu.kr,010-5920-5803,대구광역시 용산구 강남대로 (우진이박읍),영자
+7,Xh3iI#ohZ+,김옥자,haeuncoe@ju.org,053-876-7199,서울특별시 강남구 학동로,수진
+8,y7+m7Bah6V,황준혁,songsugja@ryugimhan.kr,063-341-9654,광주광역시 도봉구 오금067길 (지우박김동),현우
+9,(#DqBUcf0f,송춘자,hyeonjeong84@gimgimgim.kr,017-032-5168,울산광역시 광진구 압구정51가,영희
+10,(3G+hZg!j8,우예은,gimminseog@gimseoi.com,031-929-4389,울산광역시 중랑구 강남대1길,영식
+11,TIiI2Uzi)J,고광수,qgim@daum.net,064-707-0833,서울특별시 금천구 서초중앙92가 (현주엄심마을),도윤
+12,&e_4TcbSss,이도현,fjang@bagicoe.org,043-448-6028,세종특별자치시 서초구 테헤란76로,시우
+13,#u9OvuJlM!,이미정,gwangsu68@gimgim.org,044-329-9815,부산광역시 노원구 압구정3로,선영
+14,kxkA2WyLk@,김은지,fhan@dreamwiz.com,070-5912-9782,대구광역시 서대문구 강남대가 (도현박박동),아름
+15,Fku1GpA+4$,김민재,igyeongsu@yu.com,016-903-0898,전라남도 영월군 석촌호수1거리 (현주고김면),성호
+16,2IElFlZQ@8,송영환,ugim@dreamwiz.com,064-785-7121,충청북도 서천군 개포가 (지연김마을),민수
+17,mbURv7pw_6,고혜진,ggang@hanmail.net,064-727-3355,전라북도 안산시 단원구 압구정거리,민준
+18,%1QXIv#stX,김진우,eunju49@gimhanha.com,052-813-3736,울산광역시 양천구 압구정가,승현
+19,D)1HODnars,이정희,qgweon@hanmail.net,042-654-1734,경기도 포천시 테헤란가,지아
+20,b#nAKF3h)0,이병철,iyeongjin@yuhanhoesa.com,032-989-0431,대전광역시 영등포구 삼성길,우진
+21,dYUM9Zfd#+,김재현,seohyeonjeon@gmail.com,018-201-2399,대구광역시 서구 압구정7길,유진
+22,e4I&wBk9&K,김서윤,mijeong50@yu.org,031-572-3751,경상남도 수원시 가락370로 (순자김박읍),지우
+23,JY)T32SsOE,안영호,ihong@seoobae.net,031-372-2198,경상북도 성남시 중원구 도산대로 (재현류김마을),경수
+24,)8WPgO!Nnt,최종수,areum56@yuhanhoesa.com,017-384-9991,인천광역시 동대문구 가락거리 (서연김리),정남
+25,0#8%VXk&P!,최현숙,jaehyeon43@gimgimi.com,031-018-3163,전라북도 아산시 강남대로,진우
+26,2Lg9BXXl#Y,김서현,coeboram@live.com,062-081-5119,강원도 의정부시 역삼4로,영일
+27,U8%a6pQbX^,김정희,jiyeon06@yu.kr,011-874-7110,제주특별자치도 안산시 단원구 가락07거리,승민
+28,_VfQ!Ww0s4,최주원,jiweon33@anbag.kr,018-396-2324,세종특별자치시 남구 역삼가,서연
+29,*oL3QW8VF4,서건우,ai@ijangi.kr,053-325-2629,세종특별자치시 강동구 양재천768가 (은주최우마을),영순
+30,27GG(YJm(r,고지아,ojaehyeon@hanmail.net,032-299-5692,세종특별자치시 용산구 오금로 (정숙윤안면),영철
+31,8*F#FBZr^k,한민준,jaeho53@bagi.kr,019-704-8449,제주특별자치도 수원시 권선구 봉은사320로,예준
+32,UK3VEmoF_W,박정호,sunja96@ju.kr,041-804-2635,경상남도 의왕시 테헤란로,은서
+33,^HFr(NEsg5,김미경,gyeongsug97@naver.com,033-331-0737,대구광역시 강동구 오금가,영길
+34,B#P7Aw#Kz1,최정자,iyeongsun@nate.com,042-919-0401,충청북도 과천시 석촌호수로 (은지박면),영숙
+35,bIdYO1sro%,강명숙,sgim@live.com,062-293-0572,대전광역시 종로구 반포대가,현숙
+36,Er&2Llo!@N,이시우,minseoghwang@yu.kr,064-726-1738,서울특별시 양천구 역삼길,은경
+37,_gP^Ob%#%5,이하윤,jeonghun98@gimbag.com,063-008-9389,경상남도 고양시 영동대거리,춘자
+38,C3RdERDy)%,전현주,yi@hotmail.com,070-6820-5119,서울특별시 구로구 백제고분785거리 (건우성리),준서
+39,%nnsb+Uu92,윤영철,donghyeongim@ju.com,041-648-9128,울산광역시 영등포구 테헤란244가,경숙
+40,fsUw7BHcn$,이정숙,yeongilgim@gangbaggim.com,061-653-6001,충청남도 양양군 학동가,옥자
+41,+A3MxuqgqO,하현우,jeongho56@ju.kr,043-418-3659,인천광역시 광진구 논현길 (예지우박리),성훈
+42,*0Pf7^riZY,임정남,ao@baggim.com,053-467-4005,충청북도 부천시 오정구 오금68가 (혜진김읍),지민
+43,dv%(oP06$0,이준호,zgim@yuhanhoesa.net,064-754-3137,충청북도 부천시 오정구 도산대32가 (경숙박정면),은정
+44,MLk3HCBv&5,김옥순,caeweoni@hotmail.com,052-472-2243,경상남도 부여군 논현21가,건우
+45,_)q#7IuyAs,이은주,ogsungim@gmail.com,052-266-8594,부산광역시 양천구 언주로,동현
+46,GCP9cI$qS+,이예준,seojunbag@daum.net,053-538-8247,전라북도 보령시 삼성로,지현
+47,4SYFtW9x*2,김정식,bbag@gimgimi.org,018-913-9892,경기도 태안군 언주7가,정순
+48,%G97tkEy#V,장예은,seoyeongheo@ju.kr,017-091-8784,전라남도 영월군 학동로,수민
+49,PxcY06Eko!,김민재,hyeonjeongo@hanmail.net,016-846-1548,광주광역시 서초구 압구정22가 (경수이김마을),은주
+50,*HRE_kWs53,최미숙,seojun83@jusighoesa.kr,010-7648-4970,대전광역시 서구 선릉가,은영
+51,w(b)$9Ym!n,손영자,yunseogim@hotmail.com,010-3605-5546,전라북도 공주시 백제고분0거리,혜진
+52,PuX3a%Qe%z,박광수,gimgyeongsu@dreamwiz.com,043-166-2795,경기도 이천시 삼성로,정식
+53,)!ut*4JEFw,이경숙,gwangsu02@naver.com,010-4163-2858,전라남도 김포시 역삼21가,현정
+54,p7&^PgzP*6,김미숙,jeongsig95@ju.kr,018-410-9381,서울특별시 강북구 영동대로 (정순하송면),서현
+55,P^I9OSXpbh,김경숙,jeonghyi99@jangson.kr,019-074-2943,전라북도 홍천군 서초대가,지혜
+56,#BIG#IUa$0,권미경,ijimin@dreamwiz.com,016-125-5387,충청남도 용인시 처인구 역삼거리,광수
+57,F0M)cREjg&,한채원,yujin30@naver.com,064-765-7060,서울특별시 강서구 학동1가 (진호한안마을),현주
+58,tSs*7RYt*h,이건우,gimseojun@hotmail.com,032-515-0350,울산광역시 영등포구 압구정19가,하윤
+59,S#N2mL9iyI,박정수,coeareum@daum.net,033-243-6771,경상남도 양양군 오금06길,정자
+60,!z*BXm+E57,김수민,seungmini@dreamwiz.com,02-0441-6226,대구광역시 은평구 영동대거리,지후
+61,%TU4XswJ5b,이영호,hgim@ju.kr,062-666-7695,부산광역시 마포구 양재천거리,지원
+62,#P508Juf#Y,이승현,yuminsu@yuhanhoesa.com,043-322-8559,서울특별시 종로구 도산대길,준혁
+63,EC#06Qco(m,윤예진,rbae@igim.net,02-4867-9066,대구광역시 금천구 백제고분가 (미숙윤면),영진
+64,@4SXJGqm0g,윤도윤,gimsanghyeon@yu.kr,017-567-4763,경상남도 화성시 석촌호수546거리 (성민권면),수빈
+65,6En&^1XwA(,윤성진,hgim@hanmail.net,031-411-2450,광주광역시 동대문구 가락가 (정호김최마을),성수
+66,%3OtrqJbKL,안정순,songhaeun@gmail.com,042-783-3273,경기도 양구군 압구정거리,성진
+67,oYD2K0hsK_,권진우,misugjang@hotmail.com,043-944-1290,충청남도 음성군 개포로 (승민오박읍),도현
+68,%8V^ibjS)C,오성진,zson@naver.com,032-682-7555,전라남도 남양주시 논현49로 (수진최마을),성현
+69,)^N0ljCZ21,박주원,jeongho41@ju.net,054-978-5573,인천광역시 서초구 압구정거리,준영
+70,(xjZ2DhGJi,박준영,jihyeongim@ju.kr,051-672-8323,부산광역시 마포구 반포대355가 (정식김김동),현지
+71,%&Ua2IcyWA,한예지,yeonggili@gimim.org,033-754-0865,인천광역시 금천구 강남대5로 (서준이읍),지훈
+72,)8sPxSve6e,김우진,gimsanghyeon@yuhanhoesa.com,062-284-9098,대구광역시 서구 선릉거리,상현
+73,#3)BFtki$l,윤서준,yejingim@nacoehong.kr,032-970-6215,서울특별시 양천구 영동대37가,준호
+74,zPSowUEh_5,최정남,li@dreamwiz.com,052-422-6031,충청북도 평택시 테헤란거리 (광수이박마을),민석
+75,C9GiED^x&t,박준서,fgim@live.com,062-470-7371,서울특별시 용산구 오금12로 (지원강면),상훈
+76,257IpwA(%y,김은주,yeweoni@live.com,033-680-9416,충청남도 안성시 반포대로 (수진김면),재현
+77,v3q1&rPw*&,이종수,yeongceolcoe@live.com,043-049-5385,강원도 정선군 압구정512가,순옥
+78,eA^6nDnicQ,박서연,seoyungim@gimcoe.com,052-903-9204,경상남도 양주시 백제고분897길 (옥자김안읍),민지
+79,%dqpNrKf11,김영길,bagjiweon@hanmail.net,041-949-7097,전라북도 괴산군 오금098길,서윤
+80,AiNytF*v+3,이혜진,junseo70@dreamwiz.com,051-088-9214,제주특별자치도 포천시 오금9길,명자
+81,&LQ%Szo7%2,이건우,ogsun60@iigim.net,053-941-8251,울산광역시 동구 양재천거리 (서영김남읍),미정
+82,)2DchcqQ*S,김은영,jiabag@gmail.com,017-576-4700,충청남도 옥천군 선릉가 (하윤김마을),민서
+83,1v2^BN5z*I,신건우,migyeonggim@igo.kr,053-310-8231,광주광역시 성북구 가락거리,상호
+84,2_c&4sYkN&,김경수,xbae@daum.net,044-025-9480,대전광역시 중구 도산대947거리 (현정김면),미경
+85,^b9)AazUx%,장재현,kgim@jangibag.com,053-624-3694,부산광역시 관악구 서초중앙07거리,정훈
+86,K1RJ3$d$@2,김동현,boramyang@gimgimgim.net,061-558-7490,광주광역시 광진구 언주31로,정호
+87,&z1kJodEl3,김채원,jeongsun18@yuhanhoesa.org,070-9576-9479,세종특별자치시 강북구 오금가,주원
+88,O8Rxeqxr@3,이현지,baesiu@seobaebae.com,062-600-5730,충청남도 고양시 일산서구 서초대2로,예은
+89,_NWxPvnOa1,최우진,sujin97@ju.com,031-981-3189,세종특별자치시 성동구 강남대214길 (지훈김마을),정희
+90,yCKq0VPx@&,김상철,ieunseo@naver.com,019-581-9130,경상북도 보은군 압구정길,은지
+91,kFU3PRpw#7,심은서,minsugim@gucoeca.org,044-325-2839,부산광역시 강남구 서초대가,영수
+92,(EFN3Pb21k,김지연,rcoe@jusighoesa.kr,02-6556-8828,경상남도 안산시 단원구 서초대75길,정웅
+93,+@14P#Bd45,허정숙,naseonyeong@gmail.com,053-407-5037,서울특별시 동구 학동길,재호
+94,@5+0(3Pc%D,김서준,bagminjae@bagbaggim.kr,02-8704-4883,경상남도 서천군 서초대03길,지영
+95,hVcRx6aJd*,김현숙,jingyeonghyi@jusighoesa.kr,053-460-0203,제주특별자치도 안양시 만안구 삼성00가 (지연김리),경자
+96,6@!GHAE&!a,하중수,jungsuim@naver.com,041-162-4150,세종특별자치시 도봉구 반포대거리 (영철류마을),지연
+97,ii2cf1K6$*,민중수,yunyeonghwan@ju.org,061-864-2394,인천광역시 광진구 도산대거리 (주원김마을),현준
+98,lG2JLpk%K^,김명숙,xi@gmail.com,062-925-1280,세종특별자치시 도봉구 오금400가 (재호이김마을),병철
+99,(PfO7x!a_@,장민서,cunja86@hanmail.net,017-670-8285,충청북도 부여군 석촌호수길,중수
+100,@0KILHrZ*5,장정호,gangjihye@gmail.com,051-501-4107,서울특별시 광진구 영동대41거리,영환

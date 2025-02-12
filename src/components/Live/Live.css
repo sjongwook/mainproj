@@ -1,0 +1,101 @@
+.live-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px); /* BottomNavigation 높이를 뺌 */
+  padding-bottom: 100px; /* BottomNavigation 높이만큼 패딩 추가 */
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  padding: 0 0 20px 0; /* 하단에 20px 패딩 추가 */
+  margin: 0;
+}
+
+.live-header {
+  background-color: #fff;
+  height: auto;
+  min-height: 140px;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.live-header-content {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.live-header-content h1 {
+  font-size: 33px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 auto 0;
+}
+
+.live-header-buttons {
+  display: flex;
+  justify-content: center; /* 버튼을 가운데 정렬 */
+  width: 100%;
+  gap: 130px;
+}
+
+.live-header-button {
+  background: none;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #565656;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -1px;
+}
+
+.live-header-button.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.live-header-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #075915;
+}
+
+.live-header-button:hover {
+  color: #000;
+}
+
+.live-map-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 10px 20px;
+  min-height: 300px; /* 최소 높이 설정 */
+  height: calc(100vh - 300px); /* 뷰포트 높이에서 300px를 뺀 값 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 가능하도록 설정 */
+}
+
+
+
+/* 채팅 메시지 스타일 */
+.live-chat-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 20vh - 30px); /* 뷰포트 높이에서 헤더 높이와 여백을 뺀 값 */
+  font-size: 18px;
+  color: #666;
+}
+

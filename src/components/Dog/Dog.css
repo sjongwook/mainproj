@@ -1,0 +1,75 @@
+.dog-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dog-image {
+  width: 100%;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  position: relative;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dog-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dog-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dog-details,
+.dog-status {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+}
+
+.dog-status {
+  color: #4a90e2;
+}
+
+.paw-button {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.paw-button img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.paw-button-active img {
+  opacity: 1;
+  filter: invert(24%) sepia(97%) saturate(1015%) hue-rotate(118deg) brightness(35%) contrast(101%);
+}
+
