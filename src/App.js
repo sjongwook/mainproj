@@ -18,7 +18,7 @@ import LiveResertPage from './pages/LiveResertPage';
 import DogInformationPage from './pages/DogInformationPage';
 import MyProfilePage from './pages/MyProfilePage';
 import DbtiPage from './pages/DbtiPage';
-
+import IntroPage from './pages/IntroPage';
 
 
 import MBTITest from "./components/Dbti/index.jsx"
@@ -60,6 +60,7 @@ function App() {
         <Route path="/MyProfilePage" element={<MyProfilePage/>} />
         <Route path="/DbtiPage" element={<DbtiPage/>} />
         <Route path="/Dbti_resultPage" element={<Dbti_resultPage/>} />
+        <Route path="/IntroPage" element={<IntroPage/>} />
 
 
 
