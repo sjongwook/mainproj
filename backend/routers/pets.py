@@ -1,57 +1,63 @@
-from fastapi import APIRouter, Depends, UploadFile, File, Form
-from sqlalchemy.orm import Session
-from datetime import date, datetime
-from backend.schemas.pets import PetResponse
-from backend.services.pets import upload_pet_image
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession  # ✅ 비동기 세션으로 변경
+from datetime import datetime
 from backend.database.session import get_db
-from backend.routers.auth import get_current_user  # ✅ auth.py에서 가져오기
+from backend.routers.auth import get_current_user
 from backend.models import Pet
+from backend.schemas.pets import PetCreate, PetResponse
+from uuid import UUID
+from sqlalchemy.future import select
 
 router = APIRouter()
 
-@router.post("/pets", response_model=PetResponse)
-async def register_pet(
-    name: str = Form(...),
-    gender: str = Form(...),
-    breed: str = Form(...),
-    birth_date: str = Form(...),
-    weight: float = Form(...),
-    is_neutered: bool = Form(...),
-    notes: str = Form(None),
-    image: UploadFile = File(None),
-    db: Session = Depends(get_db),
-    user_uuid: str = Depends(get_current_user)  # ✅ 현재 로그인된 사용자 UUID 가져오기
+
+@router.get("", response_model=list[PetResponse])
+async def get_pets(
+    db: AsyncSession = Depends(get_db),
+    user_uuid: UUID = Depends(get_current_user)  # ✅ 현재 로그인한 사용자의 UUID
 ):
     """
-    반려견 정보 등록 API
+    현재 사용자의 반려동물 목록 조회
+    """
+    pets = await db.execute(
+        select(Pet).where(Pet.owner_id == str(user_uuid))  # ✅ 여기서 uuid_id 없이 필터링 가능
+    )
+    return [PetResponse.from_orm(pet) for pet in pets.scalars().all()]
+
+
+@router.post("", response_model=PetResponse)
+async def register_pet(
+    pet_data: PetCreate,
+    db: AsyncSession = Depends(get_db),
+):
+    """
+    반려동물 정보 등록 API
     """
 
-    # ✅ 나이 (age) 자동 계산
-    birth_date_obj = datetime.strptime(birth_date, "%Y-%m-%d").date()
-    today = date.today()
-    age = today.year - birth_date_obj.year - ((today.month, today.day) < (birth_date_obj.month, birth_date_obj.day))
+    # ✅ birth_date 변환
+    if isinstance(pet_data.birth_date, str):
+        try:
+            birth_date_obj = datetime.strptime(pet_data.birth_date, "%Y-%m-%d").date()
+        except ValueError:
+            raise HTTPException(status_code=400, detail="Invalid birth_date format. Expected YYYY-MM-DD.")
+    else:
+        birth_date_obj = pet_data.birth_date
 
-    # ✅ 이미지 업로드 (스토리지에 저장 후 URL 반환)
-    image_url = None
-    if image:
-        image_url = await upload_pet_image(image)
-
-    # ✅ DB에 저장할 데이터 생성
-    pet_data = Pet(
-        owner_id=user_uuid,  # ✅ 현재 로그인된 사용자 UUID 사용
-        name=name,
-        gender=gender,
-        breed=breed,
-        weight=weight,
-        age=age,  # ✅ 계산된 나이 저장
-        is_neutered=is_neutered,
-        notes=notes,
-        image_url=image_url
+    new_pet = Pet(
+        name=pet_data.name,
+        breed=pet_data.breed,
+        size=pet_data.size,
+        weight=pet_data.weight,
+        gender=pet_data.gender,
+        notes=pet_data.notes,
+        pet_mbti=pet_data.pet_mbti,
+        is_neutered=pet_data.is_neutered,
+        image_url=pet_data.image_url,
+        birth_date=birth_date_obj,
     )
 
-    # ✅ DB에 데이터 저장
-    db.add(pet_data)
-    db.commit()
-    db.refresh(pet_data)
+    db.add(new_pet)
+    await db.commit()  # ✅ 비동기 처리
+    await db.refresh(new_pet)  # ✅ id 값 확인 후 반환
 
-    return pet_data
+    return new_pet

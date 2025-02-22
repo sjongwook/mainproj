@@ -6,14 +6,13 @@ from backend.schemas.pets import PetCreate
 from backend.models import Pet
 from backend.database import supabase
 from backend.database import bucket_name
-
 async def upload_pet_image(image: UploadFile):
     """
     Supabase Storage에 반려견 이미지 업로드 후 URL 반환
     """
     try:
         file_path = f"pets/{image.filename}"
-        headers = {"apikey": os.getenv("SUPABASE_SERVICE_KEY")}
+        headers = {"apikey": os.getenv("SUPABASE_SERVICE_ROLE_KEY")}
         
         async with httpx.AsyncClient() as client:
             response = await client.post(

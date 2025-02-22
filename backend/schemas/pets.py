@@ -1,19 +1,40 @@
 from pydantic import BaseModel
 from typing import Optional
+from uuid import UUID
+from datetime import date
 
 class PetCreate(BaseModel):
     name: str
-    gender: str
     breed: str
-    birth_date: str
+    size: Optional[str] = None
     weight: float
-    is_neutered: bool
+    gender: str
     notes: Optional[str] = None
+    pet_mbti: Optional[str] = None
+    is_neutered: bool
+    image_url: Optional[str] = None
+    birth_date: Optional[date] = None
 
 class PetResponse(PetCreate):
-    id: int
-    owner_id: int
-    image_url: Optional[str] = None
+    id: int  # ✅ int 유지
 
     class Config:
-        orm_mode = True
+        from_attributes = True  # ✅ orm_mode 대신 사용
+
+    @classmethod
+    def from_orm(cls, obj):
+        """✅ SQLAlchemy 모델을 Pydantic 응답 모델로 변환하는 메서드"""
+        return cls(
+            id=obj.id,
+            uuid_id=str(obj.uuid_id),  # ✅ 여기서 UUID → str 변환
+            name=obj.name,
+            breed=obj.breed,
+            size=obj.size,
+            weight=obj.weight,
+            gender=obj.gender,
+            notes=obj.notes,
+            pet_mbti=obj.pet_mbti,
+            is_neutered=obj.is_neutered,
+            image_url=obj.image_url,
+            birth_date=obj.birth_date
+        )

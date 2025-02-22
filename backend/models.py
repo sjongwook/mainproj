@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Float, UUID
+from sqlalchemy import Column, Integer, String, Boolean,Date,  ForeignKey, Float, UUID
 from sqlalchemy.ext.declarative import declarative_base
 import uuid
 
@@ -21,14 +21,13 @@ class Pet(Base):
     __tablename__ = "pets"
 
     id = Column(Integer, primary_key=True, index=True)
-    owner_id = Column(UUID, ForeignKey("users.uuid_id"), nullable=False)  # Supabase users 테이블과 연결
     name = Column(String, nullable=False)
     breed = Column(String, nullable=False)
     size = Column(String, nullable=True)
-    weight = Column(Float, nullable=True)
-    gender = Column(String, nullable=True)
-    age = Column(Integer, nullable=True)  # ✅ birth_date가 아니라 age 유지
+    weight = Column(Float, nullable=False)
+    gender = Column(String, nullable=False)
     notes = Column(String, nullable=True)
     pet_mbti = Column(String, nullable=True)
-    is_neutered = Column(Boolean, nullable=True)
+    is_neutered = Column(Boolean, nullable=False)
     image_url = Column(String, nullable=True)
+    birth_date = Column(Date, nullable=True)

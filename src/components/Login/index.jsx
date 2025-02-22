@@ -41,7 +41,7 @@ export default function Login() {
     console.log("✅ 로그인 성공! 세션:", data.session);
   
     // 3️⃣ JWT 저장 (Supabase에서 발급된 토큰 저장)
-    localStorage.setItem("supabaseToken", data.session.access_token);
+    localStorage.setItem("token", data.session.access_token);
   
     alert("로그인 성공!");
     navigate("/");

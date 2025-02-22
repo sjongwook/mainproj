@@ -1,15 +1,12 @@
-import uuid
 from fastapi import APIRouter, UploadFile, File
+from backend.services.supabase_storage import upload_to_supabase
 
 router = APIRouter()
 
-@router.post("/upload")
+@router.post("/")
 async def upload_image(file: UploadFile = File(...)):
     """
-    업로드된 이미지를 저장하고 URL을 반환합니다.
+    업로드된 이미지를 Supabase 스토리지에 저장 후 URL 반환
     """
-    file_location = f"uploads/{uuid.uuid4()}-{file.filename}"
-    with open(file_location, "wb") as f:
-        f.write(file.file.read())
-
-    return {"image_url": f"http://localhost:8000/{file_location}"}
+    image_url = await upload_to_supabase(file)
+    return {"image_url": image_url}
